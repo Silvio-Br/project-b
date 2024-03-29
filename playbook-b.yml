@@ -1,4 +1,4 @@
 # simple playbook that launch a script sh with parameters
 - name: Launch script B
   debug:
-    msg: "Hello from Playook B! Playbook A passed me the following parameter: {{ param1 }}"
+    msg: "Hello from Playook B! Playbook A passed me the following message: {{ param1 }}"
