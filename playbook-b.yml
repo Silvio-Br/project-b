@@ -1,3 +1,4 @@
 # simple playbook that launch a script sh with parameters
 - name: Launch script B
-  command: sh ./{{dir_playbooks_included}}/playbook-b/scripts/script.sh "{{ param1 }}"
+  debug:
+    msg: "Hello from Playook B! Playbook A passed me the following parameter: {{ param1 }}"
