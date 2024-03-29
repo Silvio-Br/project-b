@@ -1,0 +1,6 @@
+# simple playbook that launch a script sh with parameters
+
+- hosts: localhost
+  tasks:
+    - name: Launch script B
+      command: sh ./scripts/script.sh "{{ param1 }}"
